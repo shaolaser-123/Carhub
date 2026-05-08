@@ -1,0 +1,134 @@
+.displayQuestions{
+    background-color: rgb(192, 205, 50);
+    align-items: center;
+    height: 350px;
+    width: 350px;
+    display: grid;
+    place-items: center;
+    border: 7px rgb(248, 165, 87) inset;
+    border-radius: 5px;
+}
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+img{
+    height: 150px;
+    border-radius: 25px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+input,
+button{
+    margin-top: 9px;
+    margin-right: 6px;
+    height: 30px;
+    border-radius: 20px;
+    border: solid yellow;
+    text-align: center;
+    cursor: pointer;
+}
+button:hover{
+    height: 35px;
+    transition: 200ms ease-in-out;
+    background-color: black;
+    color: yellow;
+    box-shadow: 0px 0px 8px red;
+}
+button:active{
+    background-color: yellow;
+    color: black;
+    transition: 10ms ease-in-out;
+}
+input:hover{
+    background-color: rgb(247, 255, 131);
+    transition: 500ms ease-in-out;
+}
+#displayQuestions{
+    background-color: rgb(192, 205, 50);
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    place-items: center;
+    border: 10px yellow groove;
+    box-shadow: 0px 0px 50px yellow;
+    border-radius: 5px;
+}
+#onep{
+    font-size: larger;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: -1px 2px 3px rgb(104, 104, 18);
+    color: rgb(35, 39, 0);
+    border: 4px outset yellow;
+    padding: 11px;
+}
+.scoreboard{
+    height: auto;
+    padding-bottom: 10px;
+    place-items: center;
+}
+.heading{
+    background-color: rgb(8, 0, 0);
+    color: yellow;
+    font-family: Algerian;
+    padding: 11px;
+    border: 5px solid yellow;
+}
+.traitsTable{
+    border: 5px solid black; 
+    color: black;
+    font-family: Bernard MT;
+    font-size: large;
+    padding: 10px;
+    width: 375px;
+    border-collapse: collapse;
+}
+th{
+    text-align: left;
+    width: 180px;
+    border: 5px solid black;
+    background-color: transparent;
+}
+td{
+    border: 5px solid black;
+    text-align: center;
+    width: 70px;
+    background-color: yellow;
+}
+tr{
+    border: 5px solid black; 
+}
+.lowMark{
+    border-right: 5px solid rgb(255, 0, 0);
+    animation: wrong 4s ease-in-out infinite;
+}
+.midmark1{
+    border-right: 25px solid rgb(255, 123, 0);
+    animation: wrong 4s ease-in-out infinite;
+}
+.midmark2{
+    border-right: 45px solid rgb(255, 187, 0);
+}
+.highmark{
+    border-right: 65px solid rgb(10, 207, 13);
+}
+@keyframes wrong {
+    50%{box-shadow: 3px 0px 8px red, -2px 0px 8px red;}
+}
+.answered{
+    margin-right: 2px;
+    border-left: solid 3px ;
+}
+
+
+
