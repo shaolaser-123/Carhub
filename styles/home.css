@@ -8,7 +8,8 @@ body{
     color: white;
     border: 0.3% yellow solid;
     margin: 0px;
-    height: 100%;
+    height: 100vh;
+    width: 100%;
 }
 
 main{
