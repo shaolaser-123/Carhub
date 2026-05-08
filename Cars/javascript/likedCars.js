@@ -1,0 +1,1 @@
+export const likedCars = JSON.parse(localStorage.getItem('likedCars')) || [];

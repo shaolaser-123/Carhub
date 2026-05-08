@@ -1,0 +1,71 @@
+#sounds{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    column-gap: 0;
+    width: 95%;
+    text-align: left;
+    padding: 8px;
+    border: 5px groove yellow;
+}
+#displaysound{
+    display: flex;
+    justify-content: center;
+}
+h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: yellow;
+    font-size: larger;
+    font-weight: 100;
+    border-left: 8px solid coral;
+    padding: 0.1rem;
+    margin-left: 8px;
+}
+p{
+    border-top: 1px solid coral;
+    border-bottom: 1px solid coral;
+    padding: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+}
+#specs,
+#topic{
+    min-height: 93%;
+    background: linear-gradient(to right, hsl(60, 97%, 24%), transparent);
+    border-top: 5px solid yellow;
+    border-bottom: 5px solid yellow;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+}
+#specs{
+    background-color: hsl(60, 97%, 24%);
+}
+#enginePic{
+    height: 170px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px black;
+    transition: all 1000ms ease-in-out;
+    color: cadetblue;
+}
+#pic{
+    max-inline-size: 70%;
+    overflow: hidden;
+}
+button{
+    transition: all 1000ms ease;
+    height: 200px;
+    background: transparent;
+    border: none;
+    perspective: 600px;
+    padding: 1rem;
+    margin-bottom: 10px;
+}
+button:active {
+    border-bottom: 24px solid red;
+   #enginePic{
+    transform-origin: top;
+    transform: rotateX(-30deg);
+    box-shadow:  0px 35px 25px black;
+} 
+}
