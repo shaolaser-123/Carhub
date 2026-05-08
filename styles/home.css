@@ -8,6 +8,9 @@ body{
     color: white;
     border: 0.3% yellow solid;
     width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main{
@@ -18,7 +21,7 @@ main{
 section{
     background-color: rgb(62, 46, 0);
     padding: 15px;
-    width: 89.39%;
+    max-width: 89.39%;
 }
 
 header{
@@ -299,7 +302,7 @@ img{
     margin-left: auto;
     margin-right: auto;
 
-    height: 350px;
+    max-height: 35%;
 
     animation: fade 1.5s;
 
