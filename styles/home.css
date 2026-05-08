@@ -1,11 +1,353 @@
+/* ========================= */
+/* GLOBAL */
+/* ========================= */
+
 body{
     background-color:black;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    border: 5px yellow solid;
+    border: 0.3% yellow solid;
     margin: 0px;
     height: 100%;
 }
+
+main{
+    display: grid;
+    place-items: center;
+}
+
+section{
+    background-color: rgb(62, 46, 0);
+    padding: 15px;
+    width: 89.39%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+}
+
+footer{
+    text-align: center;
+    background: linear-gradient(to right, black,yellow);
+    padding: 1rem;
+}
+
+hr{
+    background-color: red;
+    height: 5px;
+    width: 100%;
+}
+
+/* ========================= */
+/* TEXT */
+/* ========================= */
+
+h1{
+    color: yellow;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    font-size: 100px;
+}
+
+h2{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: coral;
+    font-size: 40px;
+    box-shadow: 3px 10px 15px black;
+    border-radius: 8px;
+}
+
+p{
+    font-style: Arial, sans-serif;
+    text-align: left;
+    font-size: large;
+    padding: 1rem;
+    border: 1px outset yellow;
+    border-radius: 8px;
+    background-color: hsl(56, 69%, 54%);
+    color: rgb(9, 9, 0);
+    box-shadow: 3px 6px 10px black;
+    text-shadow: 0px 1px 1px black;
+}
+
+/* ========================= */
+/* LINKS */
+/* ========================= */
+
+a{
+    border: solid;
+    border-color: blue;
+    border-radius: 25px;
+    color: yellow;
+    background-color: black;
+    font-size: larger;
+    padding: 3px;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover{
+    scale: 105%;
+    background-color: yellow;
+    color: black;
+    transition: all 150ms ease-in;
+}
+
+a:active{
+    scale: 105%;
+    background-color: black;
+    color: yellow;
+    transition: all 150ms ease-in;
+}
+
+/* ========================= */
+/* NAVIGATION */
+/* ========================= */
+
+nav{
+    margin: 0;
+    display: flex;
+    width: 100%;
+    background: linear-gradient(to right, black,yellow);
+}
+
+#nav{
+    background-image: url('../images/ford/modelT.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    border: 3px outset yellow;
+    border-radius: 10px;
+    box-shadow: 3px 3p 10px black;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navigate li{
+    margin: 18px;
+    text-align: left;
+}
+
+ul{
+    list-style: none;
+    margin-left: -30px;
+}
+
+li{
+    text-align: center;
+}
+
+/* ========================= */
+/* MENU */
+/* ========================= */
+
+.off-s-menu{
+    height: 100vh;
+    padding: 3px;
+
+    position: fixed;
+    top: 0;
+    right: -450px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+    font-size: larger;
+
+    transition: 300ms ease;
+
+    background: linear-gradient(to right, black,yellow);
+
+    box-shadow: 0px -6px 8px hsl(0, 0, 0, 2px);
+
+    justify-content: center;
+}
+
+.off-s-menu.active{
+    right: 0px;
+}
+
+.dropdown{
+    height: 50px;
+    width: 50px;
+
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: 10px;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+.dropdown span{
+    height: 5px;
+    width: 100%;
+    background: black;
+    border-radius: 25px;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transition: 300ms ease;
+}
+
+.dropdown span:nth-child(1){
+    top: 30%;
+}
+
+.dropdown span:nth-child(3){
+    top: 70%;
+}
+
+.dropdown.active span:nth-child(1){
+    top: 50%;
+    transform: translate(-35%, -10%) rotate(45deg);
+    height: 9px;
+}
+
+.dropdown.active span:nth-child(2){
+    opacity: 0;
+}
+
+.dropdown.active span:nth-child(3){
+    top: 50%;
+    transform: translate(-35%, 10%) rotate(-45deg);
+    height: 9px;
+}
+
+/* ========================= */
+/* HERO */
+/* ========================= */
+
+#drive{
+    margin-left: 25px;
+
+    border: none;
+
+    color: white;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    font-weight: lighter;
+
+    font-size: xx-large;
+}
+
+#driveHead{
+    margin-right: auto;
+    position: relative;
+    top: -70px;
+
+    border: none;
+
+    color: white;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    font-weight: lighter;
+}
+
+.fa-car{
+    color: rgb(241, 152, 0);
+
+    font-size: 250px;
+
+    float: right;
+
+    max-inline-size: 250px;
+
+    text-shadow: 3px 8px 8px black;
+}
+
+/* ========================= */
+/* IMAGES */
+/* ========================= */
+
+img{
+    height: 120px;
+    border-radius: 9px;
+    background-color: transparent;
+}
+
+.slider{
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.slider img{
+    display: none;
+
+    cursor: zoom-in;
+    border: 6px inset yellow;
+
+    transition: 50ms ease;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 350px;
+
+    animation: fade 1.5s;
+
+    border-radius: 5px;
+}
+
+img.displaySlides{
+    display: block;
+}
+
+.slides:active{
+    scale: 150%;
+    transition: all 0.3s ease-in-out;
+}
+
+#spin{
+    height: 35px;
+    border-radius: 19px;
+    animation: smoke 50s ease-in-out infinite;
+    animation-delay: 10s;
+}
+
+#spinHead{
+    border-radius: 19px;
+    border: none;
+    position: relative;
+    top: 18px;
+}
+
+.cwheel{
+    height: 35px;
+    border-radius: 19px;
+    animation: carHub 50s ease-in-out infinite;
+    animation-delay: 10s;
+    border: none;
+}
+
+.cwheelHead{
+    background: transparent;
+    border-radius: 50%;
+    max-inline-size: 45%;
+}
+
+/* ========================= */
+/* BUTTONS */
+/* ========================= */
+
 #topBtn{
     border: solid;
     border-color: blue;
@@ -20,6 +362,7 @@ body{
     position: fixed;
     bottom: 30px;
     right: 30px;
+
     cursor: pointer;
 
     opacity: 0;
@@ -34,99 +377,53 @@ body{
     opacity: 0.4;
     pointer-events: auto;
 }
+
 #topBtn.show:hover{
     opacity: 1;
     pointer-events: auto;
 }
-#nav{
-    background: url('../images/ford/modelT.webp') center/cover no-repeat;
-    border: 3px outset yellow;
-    border-radius: 10px;
-    box-shadow: 3px 3p 10px black;
+
+/* ========================= */
+/* LAYOUT */
+/* ========================= */
+
+#dice{
     display: flex;
-    justify-content: flex-end;
+}
+
+#li{
+    margin-bottom: 35px;
     margin-left: auto;
     margin-right: auto;
-}
-#navigate li{
-    margin: 18px;
-    text-align: left;
-}
-#navigate li{
-    margin: 18px;
-    text-align: left;
-}
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    top: 0px;
-}
-.fa-car{
-    color: rgb(241, 152, 0);
-    font-size: 250px;
-    float: right;
-    max-inline-size: 250px;
-    text-shadow: 3px 8px 8px black;
-}
-h1{
-    color: yellow;
+
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: lighter;
-    font-size: 100px;
+
+    font-size: x-large;
+
+    animation: explore 4345ms ease infinite;
+
+    color:rgb(255, 255, 255);
+
+    background: linear-gradient(to left, black, yellow);
+
+    border-radius: 25px;
+
+    width: 89px;
+
+    justify-content: center;
+
+    padding: 8px;
 }
-p{
-    font-style: Arial, sans-serif;
-    text-align: left;
-    font-size: large;
-    padding: 1rem;
-    border: 1px outset yellow;
-    border-radius: 8px;
-    background-color: hsl(56, 69%, 54%);
-    color: rgb(9, 9, 0);
-    box-shadow: 3px 6px 10px black;
-    text-shadow: 0px 1px 1px black;
-}
-.slider{
-    position: relative;
-    margin: auto;
-    overflow: hidden;
-    width: fit-content;
-}
-.slider img{
-    display: none;
-    cursor: zoom-in;
-    border: 6px inset yellow;
-    transition: 50ms ease;
-    margin-left: auto;
-    margin-right: auto;
-    height: 350px;
-    max-width: 90%;
-    animation: fade 1.5s;
-    border-radius: 5px;
-}
+
+/* ========================= */
+/* ANIMATIONS */
+/* ========================= */
+
 @keyframes fade{
     from{opacity: .5;}
     to{opacity: 1;}
 }
-img.displaySlides{
-    display: block;
-}
-#dice{
-    display: flex;
-}
-footer{
-    text-align: center;
-    background: linear-gradient(to right, black,yellow);
-    padding: 1rem;
-}
-#spin{ 
-    height: 35px;
-    border-radius: 19px;
-    animation: smoke 50s ease-in-out infinite;
-    animation-delay: 10s;
-}
+
 @keyframes smoke{
     4%{box-shadow: -9px -4px 9px rgb(199, 143, 143);}
     5%{box-shadow: -15px -4px 9px rgb(199, 143, 143), -5px -4px 9px rgb(221, 79, 79);}
@@ -141,189 +438,16 @@ footer{
         
     50%{box-shadow: -15px -4px 9px rgb(199, 143, 143), -5px -4px 9px rgb(221, 79, 79),
         -19px -2px 9px rgb(101, 92, 92), -32px -4px 13px rgb(219, 181, 181), -22px -10px 9px rgb(181, 162, 162);}
-    
 }
+
 @keyframes carHub{
     10%{transform: rotateZ(144000deg);}
     30%{transform: rotateZ(288000deg);}
     100%{transform: rotateZ(288000deg);}
-
 }
 
-a{
-    border: solid;
-    border-color: blue;
-    border-radius: 25px;
-    color: yellow;
-    background-color: black;
-    font-size: larger;
-    padding: 3px;
-    text-decoration: none;
-    text-align: center;
-}
-a:hover{
-    scale: 105%;
-    background-color: yellow;
-    color: black;
-    transition: all 150ms ease-in;
-}
-a:active{
-    scale: 105%;
-    background-color: black;
-    color: yellow;
-    transition: all 150ms ease-in;
-}
-h2{
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: coral;
-    font-size: 40px;
-    box-shadow: 3px 10px 15px black;
-    border-radius: 8px;
-}
-hr{
-    background-color: red;
-    height: 5px;
-    width: 100%;
-}
-
-.slides:active{
-    scale: 150%;
-    transition: all 0.3s ease-in-out;
-
-}
-section{
-    background-color: rgb(62, 46, 0);
-    padding: 15px;
-    width: 89.39%;
-}
-.cwheel{
-    height: 35px;
-    border-radius: 19px;
-    animation: carHub 50s ease-in-out infinite;
-    animation-delay: 10s;
-    border: none;
-}
-.off-s-menu{
-    height: 100vh;
-    padding: 3px;
-    position: fixed;
-    top: 0;
-    right: -450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    font-size: larger;
-    transition: 300ms ease;
-    background: linear-gradient(to right, black,yellow);
-    box-shadow: 0px -6px 8px hsl(0, 0, 0, 2px);
-    justify-content: center;
-}
-ul{
-    list-style: none;
-    margin-left: -30px;
-}
-li{
-    text-align: center;
-}
-.off-s-menu.active {
-    right: 0px;
-}
-nav{
-    margin: 0;
-    display: flex;
-    background: linear-gradient(to right, black,yellow);
-}
-.dropdown{
-    height: 50px;
-    width: 50px;
-    margin-left: auto;
-    position: relative;
-    margin-right: 35px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-.dropdown span{
-    height: 5px;
-    width: 100%;
-    background: black;
-    border-radius: 25px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transition: 300ms ease;
-}
-.dropdown span:nth-child(1){
-    top: 30%;
-}.dropdown span:nth-child(3){
-    top: 70%;
-}
-.dropdown.active span:nth-child(1){
-    top: 50%;
-    transform: translate(-35%, -10%) rotate(45deg);
-    height: 9px;
-}
-.dropdown.active span:nth-child(2){
-    opacity: 0;
-}
-.dropdown.active span:nth-child(3){
-    top: 50%;
-    transform: translate(-35%, 10%) rotate(-45deg);
-    height: 9px;
-}
-#li{
-    margin-bottom: 35px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: x-large;
-    animation: explore 4345ms ease infinite;
-    color:rgb(255, 255, 255);
-    background: linear-gradient(to left, black, yellow);
-    border-radius: 25px;
-    width: 89px;
-    justify-content: center;
-    padding: 8px;
-}
 @keyframes explore{
     25%{color: black;}
     50%{color: yellow; scale: 99%; background: black;}
     75%{color: rgb(131, 0, 0); background: yellow;}
-}
-main{
-    display: grid;
-    place-items: center;
-}
-#drive{
-    margin-left: 25px;
-    border: none;
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: lighter;
-    font-size: xx-large;
-}
-#driveHead{
-    margin-right: auto;
-    position: relative;
-    top: -70px;
-    border: none;
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: lighter;
-}
-#spinHead{
-    border-radius: 19px;
-    border: none;
-    position: relative;
-    top: 18px;
-}
-.cwheelHead{
-    background: transparent;
-    border-radius: 50%;
-    max-inline-size: 45%;
-}
-img{
-    height: 120px;
-    border-radius: 9px;
-    background-color: transparent;
 }
