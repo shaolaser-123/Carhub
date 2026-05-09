@@ -26,6 +26,7 @@ footer{
     text-align: center;
     background: linear-gradient(to right, black,yellow);
     padding: 1rem;
+    max-width: 100%;
 }
 
 hr{
