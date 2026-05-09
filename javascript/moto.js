@@ -7,8 +7,9 @@ let search = document.querySelector('.js-searchedCar');
 let displayCars = document.querySelector('.js-displayCar');
 
 logos.forEach((logo) =>{
-    displayCars.innerHTML = `<div id="logo">
-        <img class="logos" src="${logo}" alt="image">
+    displayCars.innerHTML += `<div id="carCard">
+        <h2>${logo.name}</h2>
+        <img class="logos" src="${logo.image}" alt="image" class="cardImages">
     </div>`;
 });
 

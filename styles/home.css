@@ -7,30 +7,20 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     border: 0.3% yellow solid;
-    width: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 main{
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 section{
     background-color: rgb(62, 46, 0);
     padding: 15px;
-    max-width: 89.39%;
 }
 
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    top: 0px;
-}
 
 footer{
     text-align: center;
@@ -41,7 +31,7 @@ footer{
 hr{
     background-color: red;
     height: 5px;
-    width: 100%;
+    width: 98%;
 }
 
 /* ========================= */
@@ -52,7 +42,7 @@ h1{
     color: yellow;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: lighter;
-    font-size: 100px;
+    font-size: 200%;
 }
 
 h2{
@@ -65,10 +55,9 @@ h2{
 }
 
 p{
-    font-style: Arial, sans-serif;
+    font-family: Arial, sans-serif;
     text-align: left;
-    font-size: large;
-    padding: 1rem;
+    padding: 1%;
     border: 1px outset yellow;
     border-radius: 8px;
     background-color: hsl(56, 69%, 54%);
@@ -112,9 +101,8 @@ a:active{
 /* ========================= */
 
 nav{
-    margin: 0;
-    display: flex;
     width: 100%;
+    display: flex;
     background: linear-gradient(to right, black,yellow);
 }
 
@@ -132,13 +120,16 @@ nav{
     margin-right: auto;
     display: flex;
     justify-content: flex-end;
+    overflow: hidden;
 }
 
 #navigate li{
     margin: 18px;
     text-align: left;
 }
-
+#navigate{
+    overflow: hidden;
+}
 ul{
     list-style: none;
     margin-left: -30px;
@@ -153,7 +144,7 @@ li{
 /* ========================= */
 
 .off-s-menu{
-    height: 100vh;
+    height: 100%;
     padding: 3px;
 
     position: fixed;
@@ -236,7 +227,6 @@ li{
 
 #drive{
     margin-left: 25px;
-
     border: none;
 
     color: white;
@@ -250,22 +240,18 @@ li{
 
 #driveHead{
     margin-right: auto;
-    position: relative;
-    top: -70px;
-
     border: none;
-
     color: white;
-
+    font-size: 15vh;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
+    overflow: hidden;
     font-weight: lighter;
 }
 
 .fa-car{
     color: rgb(241, 152, 0);
 
-    font-size: 250px;
+    font-size: 1111%;
 
     float: right;
 
@@ -277,23 +263,23 @@ li{
 /* ========================= */
 /* IMAGES */
 /* ========================= */
-
 img{
-    height: 120px;
+    max-height: 16vh;
+}
+.slide{
     border-radius: 9px;
     background-color: transparent;
+    max-height: 40vh;
 }
 
 .slider{
     position: relative;
     margin: auto;
     overflow: hidden;
-    width: fit-content;
 }
 
 .slider img{
     display: none;
-
     cursor: zoom-in;
     border: 6px inset yellow;
 
@@ -302,14 +288,13 @@ img{
     margin-left: auto;
     margin-right: auto;
 
-    max-height: 35%;
 
     animation: fade 1.5s;
 
     border-radius: 5px;
 }
 
-img.displaySlides{
+.slide.displaySlides{
     display: block;
 }
 
@@ -333,7 +318,7 @@ img.displaySlides{
 }
 
 .cwheel{
-    height: 35px;
+    max-height: 35px;
     border-radius: 19px;
     animation: carHub 50s ease-in-out infinite;
     animation-delay: 10s;
@@ -341,9 +326,8 @@ img.displaySlides{
 }
 
 .cwheelHead{
-    background: transparent;
     border-radius: 50%;
-    max-inline-size: 45%;
+    max-height: 20vh;
 }
 
 /* ========================= */
@@ -389,9 +373,6 @@ img.displaySlides{
 /* LAYOUT */
 /* ========================= */
 
-#dice{
-    display: flex;
-}
 
 #li{
     margin-bottom: 35px;

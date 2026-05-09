@@ -1,15 +1,13 @@
 #displayCar{
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 0px;
-    width: 100%;
 }
 img{
     max-inline-size: 50%;
     height: 200px;
 }
 .cardImages{
-    height: 150px;
+    max-inline-size: 90vh;
     border: inset 4px yellow;
 }
 .searchedCar{
@@ -26,12 +24,15 @@ img{
     transition: 40ms ease-in;
 }
 #carCard{
-    width: 94%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(49, 47, 47);
     border-style: outset;
     border-color: yellow;
     padding: 10px;
     text-align: center;
+    margin: 0.1%;
 }
 table,
 tr,
@@ -40,8 +41,6 @@ th{
     border: solid;
     border-color: yellow;
     font-size: small;
-    width: 100%;
-    min-height: 20%;
 }
 td{
     border-left: solid wheat;
@@ -103,18 +102,4 @@ th{
 }
 .js-saved:active{
     border: 5px red solid;
-}
-#logo{
-    height: 270px;
-    width: 270px;
-}
-#logos{
-    height: 250px;
-    max-width: 260px;
-}
-img{
-    max-inline-size: 100%;
-    border-radius: 25px;
-    border: 5px inset yellow;
-    margin: 2px;
 }

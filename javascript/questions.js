@@ -131,7 +131,7 @@ let currentQuestion = 0;
 function renderQuestion(){
     const q = questions[currentQuestion];
     questionCard.innerHTML = `<div class="js-displayQuestions displayQuestions">
-        <img src="${q.img}" alt=""><br>
+        <img src="${q.img} class="quiz" alt=""><br>
         <p id="onep">${q.question}</p>
         </div>`;
 }

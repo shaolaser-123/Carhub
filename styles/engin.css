@@ -2,8 +2,8 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     align-items: center;
+    justify-content: center;
     column-gap: 0;
-    width: 95%;
     text-align: left;
     padding: 8px;
     border: 5px groove yellow;
@@ -30,31 +30,33 @@ p{
 }
 #specs,
 #topic{
-    min-height: 93%;
     background: linear-gradient(to right, hsl(60, 97%, 24%), transparent);
-    border-top: 5px solid yellow;
-    border-bottom: 5px solid yellow;
     padding: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: larger;
+    border: none;
+    min-height: 16vh;
+    border-radius: 0;
+    color: white;
+    box-shadow: none;
 }
 #specs{
-    background-color: hsl(60, 97%, 24%);
+    background: linear-gradient(to left, hsl(60, 97%, 24%), transparent);
 }
 #enginePic{
-    height: 170px;
+    max-height: 13vh;
     border-radius: 50px;
     box-shadow: 0px 4px 4px black;
     transition: all 1000ms ease-in-out;
     color: cadetblue;
 }
 #pic{
-    max-inline-size: 70%;
+    max-inline-size: 90vh;
     overflow: hidden;
 }
 button{
     transition: all 1000ms ease;
-    height: 200px;
+    max-height: fit-content;
     background: transparent;
     border: none;
     perspective: 600px;
