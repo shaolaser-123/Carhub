@@ -7,6 +7,7 @@
     <link rel="icon" type="images/JPG" href="images/carsHomePage/favicon.JPG">
     <link rel="stylesheet" href="styles/engin.css">
     <link rel="stylesheet" href="styles/home.css">
+    <script src="https://kit.fontawesome.com/3b9e2a74ca.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="off-s-menu">
@@ -49,7 +50,7 @@
             <p id="topic">Known for reliability, tunability, andm massive power potential. <br>
             Iconic in the Supra MK4</p>
             <audio src="sounds/2jz.MP4" class="js-2jz"></audio>
-            <button class="js-rev" onkeydown="play(toyota);" onkeyup="stop(toyota);"><img id="enginePic" src="images/carsHomePage/pedal.JPG" alt=""></button>
+            <button class="js-rev" onclick="play(toyota);"><img id="enginePic" src="images/carsHomePage/pedal.JPG" alt=""></button>
             <img  id="pic" src="images/engines/vtec.JPG" alt="">
             <ul id="specs">
                 <li>B16B I4</li>
@@ -68,7 +69,7 @@
                 <li>217 lb-ft torque</li>
             </ul>
             <p id="topic">Known for it's unique rotary design , high revs and RX-7 frame</p>
-            <audio src="sounds/" class="js-rx7"></audio>
+            <audio src="sounds/13b.MP4" class="js-rx7"></audio>
             <button class="js-rev" onclick="play(mazda);"><img id="enginePic" src="images/carsHomePage/pedal.JPG" alt=""></button>
             <img  id="pic" src="images/engines/rb26.JPG" alt="">
             <ul id="specs">
@@ -189,17 +190,17 @@
             </ul>
             <p id="topic">Known for it's Brittish elegance v12 groundshaking growl in the Vantage heritage</p>
             <audio src="sounds/v12.MP4" class="js-v12"></audio>
-            <button class="js-rev"><img id="enginePic" src="images/carsHomePage/pedal.JPG" alt=""></button>
+            <button class="js-rev" onclick="play(aston);"><img id="enginePic" src="images/carsHomePage/pedal.JPG" alt=""></button>
             
         </section>
     </main>
     <footer>
-        Cars 2026
+        <i class="fa-regular fa-copyright"></i>Cars 2026 Publisher: Shaolaser
     </footer>
     <button id="topBtn">
         scroll to top
     </button>
-<script src="javascript/theJah.js"></script>
-<script src="javascript/engin.js"></script>
+    <script src="javascript/engin.js"></script>
+    <script src="javascript/theJah.js"></script>
 </body>
 </html>

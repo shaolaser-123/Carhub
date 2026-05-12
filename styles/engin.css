@@ -8,6 +8,7 @@
     padding: 8px;
     border: 5px groove yellow;
 }
+
 #displaysound{
     display: flex;
     justify-content: center;
@@ -35,10 +36,11 @@ p{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: larger;
     border: none;
-    min-height: 16vh;
+    min-height: 13vh;
     border-radius: 0;
     color: white;
     box-shadow: none;
+    padding: 1em;
 }
 #specs{
     background: linear-gradient(to left, hsl(60, 97%, 24%), transparent);
@@ -51,8 +53,11 @@ p{
     color: cadetblue;
 }
 #pic{
-    max-inline-size: 90vh;
+    max-height: 135px;
     overflow: hidden;
+    border-radius: 5%;
+    border: 2px outset yellow;
+    box-shadow: -3px 3px 8px black;
 }
 button{
     transition: all 1000ms ease;
@@ -70,4 +75,26 @@ button:active {
     transform: rotateX(-30deg);
     box-shadow:  0px 35px 25px black;
 } 
+}
+@media (max-width: 500px) {
+    #sounds{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #pic{
+        max-height: 220px;
+        border-radius: 15%;
+        box-shadow: 1px 2px 8px black;
+    }
+    #specs{
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        min-height: auto;
+    }
+    #topic{
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        min-height: auto;
+    }
 }

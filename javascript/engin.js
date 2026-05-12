@@ -14,8 +14,12 @@ const merc = document.querySelector('.js-v8m');
 const aston = document.querySelector('.js-v12');
 
 function play(sound){
-    sound.play(sound);
-}
-function stop(sound) {
-    sound.stop(sound);
+
+    sound.pause();
+    sound.currentTime = 0;
+
+    sound.play().catch(error => {
+        console.log(error);
+    });
+
 }

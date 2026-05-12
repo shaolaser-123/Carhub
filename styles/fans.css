@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 img{
-    height: 350px;
+    max-height: 45vh;
     border: 2px groove yellow;
     box-shadow: 1px 2px 8px black;
     border-radius: 5px;
@@ -20,4 +20,8 @@ h3{
 }
 h2{
     padding: 1rem;
+}
+
+@media (max-width: 500px) {
+    
 }
