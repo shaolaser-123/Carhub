@@ -445,12 +445,12 @@ img{
         flex-direction: column;
     }
     #driveHead{
-        font-size: 5vh;
+        font-size: 12vh;
     }
     .slide{
         max-height: 23vh;
     }
     .cwheelHead{
-        max-height: 9vh;
+        max-height: 15vh;
     }
 }
