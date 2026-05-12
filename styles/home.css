@@ -333,6 +333,7 @@ img{
 .cwheelHead{
     border-radius: 50%;
     max-height: 20vh;
+    box-shadow: none;
 }
 
 /* ========================= */
@@ -444,12 +445,12 @@ img{
         flex-direction: column;
     }
     #driveHead{
-        font-size: 13vh;
+        font-size: 9vh;
     }
     .slide{
         max-height: 23vh;
     }
     .cwheelHead{
-        max-height: 15vh;
+        max-height: 13vh;
     }
 }
