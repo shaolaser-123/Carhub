@@ -449,4 +449,7 @@ img{
     .slide{
         max-height: 23vh;
     }
+    .cwheelHead{
+        max-height: 15vh;
+    }
 }
