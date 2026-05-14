@@ -455,3 +455,14 @@ img{
         max-height: 15vh;
     }
 }
+@media (max-width: 360px) {
+    #driveHead{
+        font-size: 9vh;
+    }
+    .slide{
+        max-height: 23vh;
+    }
+    .cwheelHead{
+        max-height: 12vh;
+    }
+}
