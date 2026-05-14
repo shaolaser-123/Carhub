@@ -457,12 +457,12 @@ img{
 }
 @media (max-width: 360px) {
     #driveHead{
-        font-size: 9vh;
+        font-size: 6vh;
     }
     .slide{
         max-height: 23vh;
     }
     .cwheelHead{
-        max-height: 12vh;
+        max-height: 10vh;
     }
 }
